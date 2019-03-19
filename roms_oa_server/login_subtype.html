@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LIMS系统</title>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <style type="text/css">
+    html,body{
+      width:100%;height:100%;
+      margin:0px;padding:0px
+    }
+    body{
+      background-image:url('image/bj_a.jpg');
+      background-size:100% 100%;
+    }
+    .wrap{
+      width:330px;height:370px;
+      background-color:#fff;
+      position:absolute;
+      top:23%;right:10%;
+    }
+    .login-title{
+      color:#4eb1f0;
+      text-align: center;
+      font-size:18px;
+      padding-top:30px;
+      padding-bottom: 40px;
+    }
+    .login-input{
+      border:1px solid #eee;
+      width:270px;height:40px;
+      position: relative;
+      margin:0 auto;
+      margin-bottom: 18px;
+    }
+    .login-input input{
+      border:none;
+      height:38px;
+      width:80%;
+      padding-left: 1em;
+      outline:none;
+    }
+    .login-input img{
+      position: absolute;
+      margin:auto;
+      top:0;bottom:0;right:8px;
+    }
+    .remember-pwd{
+      width:270px;
+      position: relative;
+      margin:0 auto;
+    }
+    .button-wrap{
+      width:270px;height:40px;
+      position:absolute;
+      bottom:60px;left:30px;
+    }
+    .button-wrap button{
+      width:100%;height:100%;
+      background-color:#4eb1f0;
+      color:#fff;
+      border:none;
+      outline:none;
+    }
+    .button-wrap button:active{
+      border:1px solid #eee;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="login-title">用户登录</div>
+    <div class="login-input"><input type="text" name="" placeholder="用户名" id="usr"><img src="image/yh.png"></div>
+    <div class="login-input"><input type="password" name="" placeholder="密码" id="pwd"><img src="image/mm.png"></div>
+    <div class="remember-pwd"><input id="remember-me" type="checkbox" checked="checked"><span>记住密码</span></div>
+    <div class="button-wrap"><button onclick="login()">登录</button></div>
+  </div>
+  <script>
+  $(function(){
+    if(localStorage.roms101){
+      $('#usr').val(localStorage.usr)
+      $('#pwd').val(localStorage.pwd)
+    }
+  })
+  function login(){
+    var usr=$('#usr').val()
+    var pwd=$('#pwd').val()
+    if(usr==''||pwd==''){
+      alert('登录信息不能为空')
+    }else{
+      if($('#remember-me').prop('checked')){
+        localStorage.usr=usr
+        localStorage.pwd=pwd
+        localStorage.roms101=true
+      }else{
+        localStorage.removeItem('usr')
+        localStorage.removeItem('pwd')
+        localStorage.removeItem('roms101')
+      }
+      $.ajax({
+        url:'subtypeAccess',
+        type:'post',
+        data:{usr:usr,pwd:pwd},
+        success:function(res){
+          if(res.success==true){
+            location.href="/ROMS-OA/subtype-check"
+          }else{
+            alert(res.msg)
+          }
+        },
+        error:function(xhr,status,err){
+          console.log(xhr,status,err)
+        }
+      })
+    }
+  }
+
+  </script>
+</body>
+</html>

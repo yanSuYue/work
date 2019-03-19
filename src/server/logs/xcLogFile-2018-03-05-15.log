@@ -1,0 +1,1116 @@
+[2018-03-05 15:01:10.029] [INFO] default - start listening 6566
+[2018-03-05 15:01:14.904] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:01:14.905] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:01:14.905] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:01:14.905] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:14:35.345] [INFO] default - start listening 6566
+[2018-03-05 15:14:41.790] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:14:41.790] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:14:41.790] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:14:41.791] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:16:27.316] [INFO] default - start listening 6566
+[2018-03-05 15:21:09.994] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:21:09.995] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:21:09.995] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:21:09.996] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:37:01.949] [INFO] default - start listening 6566
+[2018-03-05 15:37:06.740] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:37:06.740] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:37:06.741] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:37:06.741] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:37:23.061] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:37:23.063] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:37:23.063] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:37:23.064] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:38:38.756] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:38:38.756] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:38:38.756] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:38:38.757] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:38:40.618] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2018-03-05 15:38:40.619] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:38:40.619] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:38:40.619] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:39:51.640] [INFO] default - start listening 6566
+[2018-03-05 15:39:59.536] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:39:59.537] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:39:59.537] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:39:59.537] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:41:25.776] [INFO] default - start listening 6566
+[2018-03-05 15:41:44.369] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:41:44.369] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:41:44.370] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:41:44.370] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:42:51.869] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:42:51.870] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:42:51.870] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:42:51.870] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:42:53.685] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2018-03-05 15:42:53.685] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:42:53.685] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:42:53.685] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:43:10.184] [INFO] default - start listening 6566
+[2018-03-05 15:43:35.965] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:43:35.966] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:43:35.966] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:43:35.966] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:43:47.711] [INFO] default - start listening 6566
+[2018-03-05 15:43:53.417] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:43:53.417] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:43:53.418] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:43:53.418] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:44:36.624] [INFO] default - start listening 6566
+[2018-03-05 15:44:41.371] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:44:41.371] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:44:41.371] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:44:41.372] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:47:46.964] [INFO] default - start listening 6566
+[2018-03-05 15:47:53.359] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:47:53.359] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:47:53.360] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:47:53.360] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:48:01.607] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:48:01.609] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:48:01.609] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:48:01.609] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:56:38.909] [INFO] default - start listening 6566
+[2018-03-05 15:56:43.534] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2018-03-05 15:56:43.535] [INFO] default - SELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[2018-03-05 15:56:43.535] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[2018-03-05 15:56:43.535] [INFO] default - SELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type

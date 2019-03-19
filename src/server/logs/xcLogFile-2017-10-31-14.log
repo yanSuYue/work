@@ -1,0 +1,453 @@
+[2017-10-31 14:46:26.195] [INFO] default - start listening 6566
+[2017-10-31 14:46:37.032] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:49:05.011] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:49:07.428] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+		ROMS202_DISTRICT district,
+		ROMS202_CITY city
+        WHERE
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+		company.districtid = district.id AND
+		district.cityId = city.id AND
+		city.provinceId = '99574ab5-7266-11e7-af8e-14187743d00e'
+        AND 1=1   
+		ORDER BY project.createtime DESC
+[2017-10-31 14:49:30.184] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+		ROMS202_DISTRICT district,
+		ROMS202_CITY city
+        WHERE
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+		company.districtid = district.id AND
+		district.cityId = city.id AND
+		city.provinceId = '99574ab5-7266-11e7-af8e-14187743d00e'
+        AND 1=1  and company.mineralSpecies like '%稀土%'   
+		ORDER BY project.createtime DESC
+[2017-10-31 14:49:45.037] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+		ROMS202_DISTRICT district,
+		ROMS202_CITY city
+        WHERE
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+		company.districtid = district.id AND
+		district.cityId = city.id AND
+		city.provinceId = '99574ab5-7266-11e7-af8e-14187743d00e'
+        AND 1=1  and task.controlType=2  
+		ORDER BY project.createtime DESC
+[2017-10-31 14:49:57.677] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+		ROMS202_DISTRICT district,
+		ROMS202_CITY city
+        WHERE
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+		company.districtid = district.id AND
+		district.cityId = city.id AND
+		city.provinceId = '99574ab5-7266-11e7-af8e-14187743d00e'
+        AND 1=1  and task.controlType=2  
+		ORDER BY project.createtime DESC
+[2017-10-31 14:50:22.114] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+		ROMS202_DISTRICT district,
+		ROMS202_CITY city
+        WHERE
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+		company.districtid = district.id AND
+		district.cityId = city.id AND
+		city.provinceId = '99574ab5-7266-11e7-af8e-14187743d00e'
+        AND 1=1   
+		ORDER BY project.createtime DESC
+[2017-10-31 14:50:31.916] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+		ROMS202_DISTRICT district,
+		ROMS202_CITY city
+        WHERE
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+		company.districtid = district.id AND
+		district.cityId = city.id AND
+		city.provinceId = '99574ab5-7266-11e7-af8e-14187743d00e'
+        AND 1=1  and task.controlType=3  
+		ORDER BY project.createtime DESC
+[2017-10-31 14:53:46.509] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:53:48.411] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:53:48.649] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:53:49.480] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:54:04.977] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:54:14.023] [INFO] default - start listening 6566
+[2017-10-31 14:54:20.126] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:54:21.761] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:55:12.571] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:55:15.400] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:56:14.717] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='1' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:56:31.766] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:56:42.513] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='1' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:57:33.715] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='1' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:58:02.659] [INFO] default - start listening 6566
+[2017-10-31 14:58:06.374] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:58:08.520] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[2017-10-31 14:58:39.738] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,5
+[2017-10-31 14:59:20.091] [INFO] default - SELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+         project.type='1' AND   
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id AND
+        project.censusUrl IS NULL  
+        AND 1=1   
+        AND (( task.pass = 2 ))
+        ORDER BY project.createtime DESC LIMIT 0,10

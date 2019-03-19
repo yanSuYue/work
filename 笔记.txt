@@ -1,0 +1,12 @@
+本机电脑运行
+git clone git@xtroms.com:/usr/linkivr/romssys.git
+
+git的密码  xtech$2018git
+
+git status
+
+git add .
+git commit -m “初始项目”
+
+git push
+

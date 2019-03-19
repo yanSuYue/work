@@ -1,0 +1,162 @@
+来自127.0.0.1的访问
+login
+mysql commit success
+来自127.0.0.1的访问
+index
+来自127.0.0.1的访问
+------------------------ Gxv5HJdJYB8IKsyk8EwTD2VtLvbtYQNJ
+mysql commit success
+{ msg: '查询结果正常',
+  success: true,
+  result: 
+   [ RowDataPacket {
+       id: '99574ab5-7266-11e7-af8e-14187743d00e',
+       provinceName: '贵州省' },
+     RowDataPacket {
+       id: 'b215c137-a34d-11e7-b2ca-00163e010059',
+       provinceName: '浙江省' } ] }
+get task
+[32m[2018-03-19 12:34:41.098] [INFO] default - [39mSELECT DISTINCT company.moncompanyname, project.* FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1 AND company.provinceId='99574ab5-7266-11e7-af8e-14187743d00e'  
+        AND (( task.pass = 0 OR task.pass= 1 ))
+        ORDER BY project.createtime DESC LIMIT 0,10
+[32m[2018-03-19 12:34:41.098] [INFO] default - [39mSELECT DISTINCT task.id FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id
+        AND 1=1 AND company.provinceId='99574ab5-7266-11e7-af8e-14187743d00e'  
+        AND (( task.pass = 0 OR task.pass= 1 ))
+[32m[2018-03-19 12:34:41.099] [INFO] default - [39mSELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1 AND company.provinceId='99574ab5-7266-11e7-af8e-14187743d00e'  
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+[32m[2018-03-19 12:34:41.099] [INFO] default - [39mSELECT DISTINCT taskpoint.type,count(*) as count FROM  
+        ROMS202_MONCOMPANY company , 
+        ROMS202_PROJECT project ,
+        ROMS202_TASK task,  
+        ROMS202_TASKPOINT taskpoint ,
+        ROMS202_MONSTATION station,
+        ROMS202_DISTRICT district
+        WHERE
+          
+        project.moncompanyid = company.id AND 
+        task.projectid = project.id AND
+        taskpoint.taskid = task.id AND 
+        task.monstationid = station.id AND 
+        company.districtid = district.id 
+        AND 1=1 AND company.provinceId='99574ab5-7266-11e7-af8e-14187743d00e'  
+        AND (( task.pass = 0 OR task.pass= 1 )) group by taskpoint.type
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+888 wangshimu
+mysql commit success
+mysql commit success
+mysql commit success
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%%' or moncompanyNum like '%%')
+mysql commit success
+来自127.0.0.1的访问
+mysql commit success
+888 wangshimu
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%5223%' or moncompanyNum like '%5223%')
+mysql commit success
+mysql commit success
+mysql commit success
+888 wangshimu
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%5223%' or moncompanyNum like '%5223%')
+mysql commit success
+mysql commit success
+mysql commit success
+888 wangshimu
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%5223%' or moncompanyNum like '%5223%')
+mysql commit success
+mysql commit success
+mysql commit success
+888 wangshimu
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%5223%' or moncompanyNum like '%5223%')
+mysql commit success
+mysql commit success
+mysql commit success
+888 wangshimu
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%5223%' or moncompanyNum like '%5223%')
+mysql commit success
+mysql commit success
+mysql commit success
+888 wangshimu
+mysql commit success
+select COUNT(*) as count from ROMS202_MONCOMPANY mon where mon.provinceId='99574ab5-7266-11e7-af8e-14187743d00e' AND  (moncompanyName like '%5223%' or moncompanyNum like '%5223%')
+mysql commit success

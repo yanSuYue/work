@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "set NODE_ENV = production && node /server/shenzhen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@118.178.18.106:/home/basement/node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "excel-export": "^0.5.1",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "multer": "^1.3.0",
+    "mysql": "^2.13.0",
+    "request": "^2.81.0",
+    "uuid": "^3.0.1"
+  }
+}

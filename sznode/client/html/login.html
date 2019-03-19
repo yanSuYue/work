@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROMS101/201智能辐射监测数据平台</title>
+    <style>
+        /* CSS RESET */
+        html,body{
+            height:100%;
+        }
+        body{
+            margin:0;
+            position:relative;
+            background:url(./dist/bg.jpg) no-repeat center;
+            background-size:cover;
+        }
+        .clearfix:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .clearfix{
+            zoom:1;
+        }
+        /* CSS COMMON */
+        .wrap{
+            width:1084px;
+            margin:0 auto;
+            box-sizing:border-box;
+        }
+        .head{
+            height:36px;
+            background:#144179;
+            color:#fff;
+            line-height:36px;
+        }
+        .content .wrap{
+            padding:118px 60px 0 160px;
+        }
+        .left{
+            float:left;
+            width:360px;
+            height:384px;
+            background:url(./dist/loginleft.png) no-repeat;
+            background-size:contain;
+            margin-right:140px;
+            margin-top:40px;
+        }
+        .right{
+            float:left;
+            background:#fff;
+        }
+        .log_in{
+            width:330px;
+            height:368px;
+        }
+        .log_in h2{
+            color:#4eb1f0;
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            font-size:18px;
+            font-weight:normal;
+        }
+        .log_in .item{
+            width:253px;
+            height:30px;
+            border:1px solid #e0e0e0;
+        }
+        .log_in .item input{
+        background:none;
+            width:244px;
+            height:100%;
+            border:none;
+            outline:none;
+            padding-left:8px;
+        }
+        .log_in .item{
+            margin-bottom:14px;
+        }
+        .log_in button{
+            width:253px;
+            height:38px;
+            margin-left:31px;
+            line-height:38px;
+            text-align:center;
+            color:#fff;
+            background:#4eb1f0;
+            border:none;
+            outline:none;
+            font-size:18px;
+        }
+        .log_in .item{
+            margin-left:30px;
+        }
+        .write button{
+            display:block;
+        }
+        .footer{
+            width:100%;
+            position:fixed;
+            bottom:0;
+            left:0;
+            color:#fff;
+            height:50px;
+            line-height:50px;
+        }
+        .footer h3{
+            margin:0;
+            font-weight:normal;
+            font-size:16px;
+            position:absolute;
+            right:40px;
+            bottom:0;
+            height:100%;
+        }
+        #sub{
+            cursor:pointer;
+        }
+        select{
+            outline: none;
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="wrap">ROMS101/201智能辐射监测数据平台</div>
+    </div>
+    <div class="content">
+        <div class="wrap clearfix">
+           <div class="left">
+           </div>
+           <div class="right">
+               <div class="log_in">
+                   <h2>用户登录</h2>
+					<div class="write">
+                        <div class="item first">
+                            <input type="text" id="user" placeholder="用户名"  autocomplete="off">
+                        </div>
+						<div class="item">
+                            <input type="password" id="pwd" placeholder="密码" autocomplete="off">
+                        </div>
+						<button id="sub">登录</button>
+					</div>
+				</div>
+           </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <h3>ROMS101/201智能辐射监测数据平台</h3>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script>
+        $(function(){
+            $(".wrap-select").click(function(){
+                console.log($("input[name='district']:checked").val())
+            })
+            $('#user').focus();
+            $("#sub").click(function(){
+                check();
+            });
+            document.onkeyup=function(e){
+                var ev=event||e;
+                if(ev.keyCode==13){
+                    check()
+                }
+            };
+            function check(){
+                var username=$('#user').val()
+                var password=$('#pwd').val()
+                if(username&&password){
+                    var json={usr:username,pwd:password};
+                    $.ajax({
+                        url:'/login',
+                        contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                        type: 'POST',
+                        data: json,
+                        success: function (res){
+                            if(res.success){
+                                localStorage.setItem('usertype',res.usertype.modList)
+								localStorage.setItem('subCompanyId',res.usertype.subCompanyId)
+                                location.href="/"
+                            }else{
+                                alert(res.msg)
+                            }
+                        },
+                        error: function (err){
+                            console.log(err)
+                        }
+                    });
+                }else{
+                    alert("密码和账户不能为空！")
+                }
+            }
+        })
+    </script>
+</body>
+</html>
